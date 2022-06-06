@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block content %}
+
+
+<div class="position-absolute top-50 start-50 translate-middle">
+    <p style="margin-bottom:80px;margin-left: 100px; font-size:60px " > WELCOME TO LEAGUE STANDINGS </p>
+
+<select style="width:800px" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+
+  <option selected>Select League</option>
+  <option value="1">Premier League</option>
+  <option value="2">Serie A</option>
+  <option value="3">Ligue 1</option>
+  <option value="4">LaLiga</option>
+  <option value="5">Primeira Liga</option>
+  <option value="6">Bundesliga</option>
+</select>
+
+<select class="form-select form-select-md" aria-label=".form-select-sm example">
+  <option selected>Select Season</option>
+  <option value="1">2010</option>
+  <option value="2">2011</option>
+  <option value="3">2012</option>
+  <option value="4">2013</option>
+  <option value="5">2014</option>
+  <option value="6">2015</option>
+  <option value="7">2016</option>
+  <option value="8">2017</option>
+  <option value="9">2018</option>
+  <option value="10">2019</option>
+  <option value="11">2020</option>
+  <option value="12">2021</option>
+</select>
+<a  href="{{ url_for('index') }}">
+<button style="margin-left: 290px; margin-top: 20px; width: 40%; height: 50px" type="button" class="btn btn-success">SEARCH</button>
+</a>
+</div>
+
+
+
+
+
+{% endblock %}
